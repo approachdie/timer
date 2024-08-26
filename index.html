@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таймер</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer__controls">
+        <form name="timerForm">
+          <input type="text" name="minutes" placeholder="Какое время ждём?" />
+        </form>
+        <div class="btns">
+          <button class="timer__button" data-time="120" data-id="1">2 минуты</button>
+          <button class="timer__button" data-time="900" data-id="2">15 минут</button>
+          <button class="timer__button" data-time="1800" data-id="3">30 минут</button>
+          <button class="timer__button" data-time="3600" data-id="4">Уйти на обед</button>
+        </div>
+      </div>
+      <div class="show_timer">
+        <div class="show_timer-left"></div>
+        <p class="show_timer-end"></p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
